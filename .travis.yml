@@ -4,6 +4,5 @@ services:
 
 before_install:
   - docker build -t torukino/docker-react  -f Dockerfile.dev .
-
 script:
   - docker run -e CI=true torukino/docker-react npm run test
